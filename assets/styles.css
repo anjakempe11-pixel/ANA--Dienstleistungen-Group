@@ -114,6 +114,7 @@ h1 em { color: var(--bronze); font-weight: 500; }
 .security-page .eyebrow, .security-page .number { color: #8b552e; }
 body[data-page="leistungen"] .eyebrow, body[data-page="leistungen"] .number { color: var(--blue); }
 .security-page .button:hover, .security-cta { background: #8b552e; border-color: #8b552e; }
+.cleaning-cta { background: var(--blue); }
 .security-strip { background: #e9e0d7; }
 .conversion-panel { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding: 46px; border: 1px solid var(--line); border-radius: 28px; background: white; box-shadow: var(--shadow); }
 .conversion-panel > div { max-width: 760px; }
