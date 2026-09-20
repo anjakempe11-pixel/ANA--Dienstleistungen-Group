@@ -42,7 +42,7 @@ nav .nav-cta:hover { color: white; background: var(--bronze); border-color: var(
 .hero { min-height: 720px; display: grid; align-items: center; overflow: hidden; background: linear-gradient(90deg, rgba(242,247,248,.98) 0%, rgba(242,247,248,.94) 48%, rgba(242,247,248,.2) 73%), url("ana-cleaning-hero.png") center/cover no-repeat; }
 .parent-hero { min-height: 690px; display: grid; align-items: center; overflow: hidden; background: radial-gradient(circle at 78% 45%, rgba(212,164,111,.28), transparent 28%), linear-gradient(135deg,#f7fafb 0%,#e8f0f3 55%,#dfd3c7 100%); }
 .parent-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 70px; padding: 86px 0; }
-.parent-monogram, .brand-panel { min-height: 360px; display: grid; place-content: center; padding: 45px; text-align: center; border: 1px solid rgba(154,99,56,.25); border-radius: 42px; background: linear-gradient(145deg,#17344f,#101f2c); box-shadow: var(--shadow); color: white; }
+.parent-monogram, .brand-panel { min-height: 360px; display: grid; place-content: center; padding: 45px; text-align: center; border: 1px solid rgba(154,99,56,.25); border-radius: 42px; background: linear-gradient(145deg,rgba(23,52,79,.90),rgba(16,31,44,.94)), url("ana-sign-bg.jpg") center/cover no-repeat; box-shadow: var(--shadow); color: white; }
 .parent-monogram span, .brand-panel span { font: 800 clamp(4.5rem,10vw,8.5rem)/.9 Georgia,serif; letter-spacing: .1em; text-shadow: 0 8px 24px rgba(0,0,0,.28); }
 .parent-monogram small, .brand-panel small { margin-top: 20px; color: var(--bronze-light); font-weight: 800; letter-spacing: .22em; text-transform: uppercase; }
 .hero-grid { display: grid; grid-template-columns: 1.08fr .92fr; align-items: center; gap: 40px; padding: 82px 0; }
