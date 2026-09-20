@@ -94,8 +94,8 @@ h1 em { color: var(--bronze); font-weight: 500; }
 .copy h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 500; letter-spacing: -.035em; }
 .copy p { color: var(--ink-soft); }
 .principles { display: grid; gap: 12px; margin-top: 30px; }
-.principle { display: grid; grid-template-columns: 42px 1fr; gap: 14px; align-items: start; padding-top: 18px; border-top: 1px solid var(--line); }
-.principle b { color: var(--bronze); font-family: Georgia,serif; font-size: 1.3rem; }
+.principle { padding-top: 18px; border-top: 1px solid var(--line); }
+.principle strong { color: var(--bronze); }
 .cta-band { padding: 72px 0; background: var(--bronze); color: white; }
 .cta-band .shell { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .cta-band h2 { max-width: 720px; margin: 0; font-size: clamp(2rem, 5vw, 4rem); font-weight: 500; }
@@ -115,7 +115,6 @@ h1 em { color: var(--bronze); font-weight: 500; }
 .conversion-panel h2 { margin-bottom: 12px; font-size: clamp(2rem,4vw,3.35rem); font-weight: 500; }
 .conversion-panel p:last-child { margin-bottom: 0; color: var(--ink-soft); }
 .conversion-panel .button { flex: 0 0 auto; }
-.cleaning-values .value { background: #16476b; }
 .regional-section { background: #e7eff2; }
 .regional-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: end; }
 .regional-grid h2 { margin-bottom: 0; font-size: clamp(2.35rem,5vw,4.4rem); font-weight: 500; }
@@ -123,16 +122,14 @@ h1 em { color: var(--bronze); font-weight: 500; }
 .page-intro { max-width: 880px; }
 .page-intro p:last-child { max-width: 720px; color: var(--ink-soft); font-size: 1.15rem; }
 .detail-list { display: grid; gap: 18px; }
-.detail { display: grid; grid-template-columns: 100px 1fr; gap: 28px; padding: 34px 0; border-bottom: 1px solid var(--line); }
+.detail { padding: 34px 0; border-bottom: 1px solid var(--line); }
 .detail:first-child { border-top: 1px solid var(--line); }
-.detail .number { margin: 4px 0 0; }
 .detail h2 { margin-bottom: 10px; font-size: 2rem; font-weight: 500; }
 .detail p { margin: 0; color: var(--ink-soft); }
 .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.value { padding: 30px; border-radius: var(--radius); background: var(--ink); color: white; }
-.value span { color: var(--bronze-light); font: 500 2.2rem Georgia,serif; }
-.value h3 { margin: 18px 0 10px; font-size: 1.45rem; font-weight: 500; }
-.value p { margin: 0; color: #d8d1c9; }
+.value { padding: 30px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); box-shadow: 0 12px 32px rgba(29,39,46,.06); }
+.value h3 { margin: 0 0 10px; font-size: 1.45rem; font-weight: 500; color: var(--ink); }
+.value p { margin: 0; color: var(--ink-soft); }
 .contact-layout { display: grid; grid-template-columns: .78fr 1.22fr; gap: 54px; align-items: start; }
 .contact-card { padding: 32px; border-radius: var(--radius); background: var(--ink); color: white; }
 .contact-card h2 { font-size: 2rem; font-weight: 500; }
@@ -202,7 +199,6 @@ footer { padding: 72px 0 22px; background: #1e1e1c; color: #ddd5cb; }
   .section-head { display: block; }
   .section-head > p { margin-top: 20px; }
   .service-card { min-height: 0; }
-  .detail { grid-template-columns: 1fr; gap: 8px; }
   .cta-band .shell { display: block; }
   .cta-band .button { margin-top: 26px; }
   .footer-bottom { display: block; }
@@ -213,10 +209,6 @@ footer { padding: 72px 0 22px; background: #1e1e1c; color: #ddd5cb; }
 .parent-monogram .pm-mark{margin:0;font:800 2.1rem/1 Georgia,serif;letter-spacing:.16em;color:#fff;}
 .parent-monogram .pm-lead{margin:0;font-size:1.08rem;line-height:1.6;color:#fff;font-weight:600;}
 .parent-monogram .pm-text{margin:0;font-size:1rem;line-height:1.7;color:rgba(255,255,255,.82);}
-
-/* Fix: Logo darf seinen Kasten nicht ueberlaufen (kein Ueberlappen in die Schrift) */
-.division-logo{overflow:hidden;}
-.division-logo img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;}
 
 /* Hintergrundbild im Kopfbereich: helles Foto, passend zum warmen ANA-Farbschema */
 .parent-hero{
