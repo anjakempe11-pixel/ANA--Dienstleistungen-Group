@@ -213,3 +213,24 @@ footer { padding: 72px 0 22px; background: #1e1e1c; color: #ddd5cb; }
 .parent-monogram .pm-mark{margin:0;font:800 2.1rem/1 Georgia,serif;letter-spacing:.16em;color:#fff;}
 .parent-monogram .pm-lead{margin:0;font-size:1.08rem;line-height:1.6;color:#fff;font-weight:600;}
 .parent-monogram .pm-text{margin:0;font-size:1rem;line-height:1.7;color:rgba(255,255,255,.82);}
+
+/* Fix: Logo darf seinen Kasten nicht ueberlaufen (kein Ueberlappen in die Schrift) */
+.division-logo{overflow:hidden;}
+.division-logo img{width:auto;height:auto;max-width:100%;max-height:100%;object-fit:contain;}
+
+/* Hintergrundbild im Kopfbereich: helles Foto, passend zum warmen ANA-Farbschema */
+.parent-hero{
+  background:
+    radial-gradient(circle at 78% 45%, rgba(212,164,111,.22), transparent 28%),
+    linear-gradient(115deg, rgba(247,250,251,.93) 0%, rgba(232,240,243,.88) 55%, rgba(223,211,199,.82) 100%),
+    url("ana-hero-building.jpg") center/cover no-repeat;
+}
+
+/* Kopfbereich mit Foto: linke Text-Karte dunkel + helle Schrift (Ablass-Stil) */
+.parent-hero .hero-copy{background:rgba(11,22,38,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.12);}
+.parent-hero .hero-copy h1{color:#fff;}
+.parent-hero .hero-copy h1 em{color:var(--bronze-light);}
+.parent-hero .hero-copy .eyebrow{color:var(--bronze-light);}
+.parent-hero .hero-copy > p:not(.eyebrow){color:rgba(255,255,255,.86);}
+.parent-hero .button.secondary{color:#fff;border-color:rgba(255,255,255,.5);}
+.parent-hero .button.secondary:hover{background:rgba(255,255,255,.14);}
