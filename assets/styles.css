@@ -68,6 +68,9 @@ h1 em { color: var(--bronze); font-weight: 500; }
 .section { padding: 105px 0; }
 .section.alt { background: var(--white); }
 .section-head { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 48px; }
+#bereiche .section-head { display: block; }
+#bereiche .section-head h2 { white-space: nowrap; }
+#bereiche .section-head > p { margin-top: 16px; }
 .section-head h2, .page-intro h1 { margin-bottom: 0; font-size: clamp(2.4rem, 5vw, 4.6rem); font-weight: 500; letter-spacing: -.035em; }
 .section-head > p { max-width: 500px; margin: 0; color: var(--ink-soft); }
 .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
