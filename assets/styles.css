@@ -208,3 +208,8 @@ footer { padding: 72px 0 22px; background: #1e1e1c; color: #ddd5cb; }
   .footer-bottom { display: block; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; } .reveal { opacity: 1; transform: none; } }
+/* Startseite: Textkasten im Hero (ANA Dienstleistungen Group) */
+.parent-monogram{display:flex;flex-direction:column;justify-content:center;text-align:left;gap:14px;}
+.parent-monogram .pm-mark{margin:0;font:800 2.1rem/1 Georgia,serif;letter-spacing:.16em;color:#fff;}
+.parent-monogram .pm-lead{margin:0;font-size:1.08rem;line-height:1.6;color:#fff;font-weight:600;}
+.parent-monogram .pm-text{margin:0;font-size:1rem;line-height:1.7;color:rgba(255,255,255,.82);}
