@@ -226,11 +226,4 @@ footer { padding: 72px 0 22px; background: #1e1e1c; color: #ddd5cb; }
     url("ana-hero-building.jpg") center/cover no-repeat;
 }
 
-/* Kopfbereich mit Foto: linke Text-Karte dunkel + helle Schrift (Ablass-Stil) */
-.parent-hero .hero-copy{background:rgba(11,22,38,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.12);}
-.parent-hero .hero-copy h1{color:#fff;}
-.parent-hero .hero-copy h1 em{color:var(--bronze-light);}
-.parent-hero .hero-copy .eyebrow{color:var(--bronze-light);}
-.parent-hero .hero-copy > p:not(.eyebrow){color:rgba(255,255,255,.86);}
-.parent-hero .button.secondary{color:#fff;border-color:rgba(255,255,255,.5);}
-.parent-hero .button.secondary:hover{background:rgba(255,255,255,.14);}
+/* Kopfbereich mit hellem Foto: normale dunkle Schrift, kein Textkasten noetig */
