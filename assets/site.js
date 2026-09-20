@@ -12,6 +12,16 @@ if (footer) {
 const menuButton = document.querySelector(".menu-button");
 const navigation = document.querySelector("#hauptnavigation");
 menuButton?.addEventListener("click", () => { const open = menuButton.getAttribute("aria-expanded") === "true"; menuButton.setAttribute("aria-expanded", String(!open)); navigation?.classList.toggle("is-open", !open); });
-document.querySelectorAll("[data-contact-form]").forEach((form) => { form.addEventListener("submit", (event) => { event.preventDefault(); const notice = form.querySelector("[data-form-notice]"); if (notice) notice.textContent = "Vielen Dank. In dieser Vorschau wird die Anfrage noch nicht versendet. Nach Einrichtung des Formularversands kann die Funktion freigeschaltet werden."; }); });
+document.querySelectorAll("[data-contact-form]").forEach((form) => {
+  form.addEventListener("submit", (event) => { event.preventDefault(); const notice = form.querySelector("[data-form-notice]"); if (notice) notice.textContent = "Vielen Dank. In dieser Vorschau wird die Anfrage noch nicht versendet. Nach Einrichtung des Formularversands kann die Funktion freigeschaltet werden."; });
+  const bereichSelect = form.querySelector('select[name="bereich"]');
+  const leistungSelect = form.querySelector('select[name="leistung"]');
+  if (bereichSelect && leistungSelect) {
+    bereichSelect.addEventListener("change", () => {
+      leistungSelect.querySelectorAll("optgroup[data-bereich]").forEach((group) => { group.hidden = group.dataset.bereich !== bereichSelect.value; });
+      leistungSelect.value = "Bitte auswählen";
+    });
+  }
+});
 const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) entry.target.classList.add("visible"); }); }, { threshold: 0.12 });
 document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
